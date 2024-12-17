@@ -5,11 +5,12 @@ import { Suspense } from "react";
 export default async function Page({
   searchParams,
 }: {
-  searchParams?: {
+  searchParams?: Promise<{
     query?: string;
-  };
+  }>;
 }) {
-  const query = searchParams?.query || "";
+  const p = await searchParams;
+  const query = p?.query || "";
   const customers = await fetchFilteredCustomers(query);
 
   return (
