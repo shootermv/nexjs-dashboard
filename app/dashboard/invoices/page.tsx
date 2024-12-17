@@ -15,13 +15,14 @@ export const metadata: Metadata = {
 export default async function Page({
   searchParams,
 }: {
-  searchParams?: {
+  searchParams?: Promise<{
     query?: string;
     page?: string;
-  };
+  }>;
 }) {
-  const query = searchParams?.query || "";
-  const currentPage = Number(searchParams?.page) || 1;
+  const s = await searchParams;
+  const query = s?.query || "";
+  const currentPage = Number(s?.page) || 1;
   const totalPages = await fetchInvoicesPages(query);
   return (
     <div className="w-full">
