@@ -18,7 +18,7 @@ export async function fetchRevenue() {
 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 
-    console.log("Data fetch completed after 3 seconds.");
+    
 
     return data.rows;
   } catch (error) {
@@ -110,7 +110,7 @@ export async function fetchFilteredInvoices(
       ORDER BY invoices.date DESC
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `;
-
+    console.log('INVOICES:', invoices.rows[0])
     return invoices.rows;
   } catch (error) {
     console.error("Database Error:", error);
