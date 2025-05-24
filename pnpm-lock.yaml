@@ -55,7 +55,7 @@ importers:
         version: 10.0.4(react@19.1.0)
       zod:
         specifier: ^3.23.8
-        version: 3.25.23
+        version: 3.25.28
     devDependencies:
       '@types/bcrypt':
         specifier: ^5.0.2
@@ -2084,8 +2084,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.25.23:
-    resolution: {integrity: sha512-Od2bdMosahjSrSgJtakrwjMDb1zM1A3VIHCPGveZt/3/wlrTWBya2lmEh2OYe4OIu8mPTmmr0gnLHIWQXdtWBg==}
+  zod@3.25.28:
+    resolution: {integrity: sha512-/nt/67WYKnr5by3YS7LroZJbtcCBurDKKPBPWWzaxvVCGuG/NOsiKkrjoOhI8mJ+SQUXEbUzeB3S+6XDUEEj7Q==}
 
 snapshots:
 
@@ -4302,4 +4302,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.25.23: {}
+  zod@3.25.28: {}
