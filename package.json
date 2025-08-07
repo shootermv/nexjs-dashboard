@@ -17,8 +17,8 @@
     "next": "15.4.6",
     "next-auth": "5.0.0-beta.29",
     "postcss": "8.5.6",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "tailwindcss": "4.1.11",
     "typescript": "5.8.3",
     "use-debounce": "^10.0.1",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.16.5",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.7",
     "eslint": "^9.0.0",
     "eslint-config-next": "15.4.6"
   },
